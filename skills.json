@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Sketching & Rendering",
+        "icon": "https://img.icons8.com/color/48/000000/design.png"
+    },
+    {
+        "name": "Concept Development",
+        "icon": "https://img.icons8.com/color/48/000000/idea.png"
+    },
+    {
+        "name": "Prototyping",
+        "icon": "https://img.icons8.com/color/48/000000/blueprint.png"
+    },
+    {
+        "name": "Last Making",
+        "icon": "https://img.icons8.com/color/48/000000/sneaker.png"
+    },
+    {
+        "name": "Pattern Making",
+        "icon": "https://img.icons8.com/color/48/000000/cutting.png"
+    },
+    {
+        "name": "3D Printing",
+        "icon": "https://img.icons8.com/color/48/000000/3d-printer.png"
+    },
+    {
+        "name": "Material Knowledge",
+        "icon": "https://img.icons8.com/color/48/000000/leather.png"
+    },
+    {
+        "name": "Adobe Photoshop",
+        "icon": "https://img.icons8.com/color/48/000000/adobe-photoshop.png"
+    },
+    {
+        "name": "Adobe Illustrator",
+        "icon": "https://img.icons8.com/color/48/000000/adobe-illustrator.png"
+    },
+    {
+        "name": "Rhino 3D",
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-rhinoceros-3d-modeling-software-for-designers-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "Lightroom",
+        "icon": "https://img.icons8.com/color/48/000000/adobe-lightroom.png"
+    },
+    {
+        "name": "CapCut",
+        "icon": "https://img.icons8.com/color/48/000000/capcut.png"
+    },
+    {
+        "name": "Canva",
+        "icon": "https://img.icons8.com/color/48/000000/canva.png"
+    },
+    {
+        "name": "Photography",
+        "icon": "https://img.icons8.com/color/48/000000/camera.png"
+    },
+    {
+        "name": "Malayalam",
+        "icon": "https://img.icons8.com/color/48/000000/translation.png"
+    },
+    {
+        "name": "English",
+        "icon": "https://img.icons8.com/color/48/000000/great-britain.png"
+    },
+    {
+        "name": "Hindi",
+        "icon": "https://img.icons8.com/color/48/000000/india.png"
+    }
+]

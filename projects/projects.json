@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Footwear Design Portfolio",
+    "desc": "A collection of hand-sketched and digitally rendered footwear concepts created during my B.Des studies at FDDI Hyderabad.",
+    "image": "cmsoon",
+    "category": "design",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "Win Heels Internship Project",
+    "desc": "Hands-on project during internship at Win Heels, Kinalur. Involved in production workflow, material handling, and quality control of footwear.",
+    "image": "cmsoon",
+    "category": "design",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  },
+  {
+    "name": "3D Prototype - Sneaker Concept",
+    "desc": "Sneaker concept developed using Rhino 3D software, focusing on ergonomics and aesthetic appeal with modern material exploration.",
+    "image": "cmsoon",
+    "category": "design",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]
