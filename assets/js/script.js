@@ -71,7 +71,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["footwear design", "3D prototyping", "concept development", "sketching & rendering", "material exploration"],
+    strings: ["footwear design", "ShoeMaster", "Rhinoceros 3D", "3D prototyping", "concept development", "sketching & rendering", "material exploration"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
