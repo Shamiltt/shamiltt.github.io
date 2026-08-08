@@ -715,73 +715,52 @@ header .navbar ul li a:hover::after {
 }
 
 /* ===================================
-   CONTACT SECTION
+   CONTACT SECTION (MINIMAL)
    =================================== */
 .contact {
   background: #f6f5f0;
 }
-.contact .container {
-  max-width: 900px;
-  margin: 4rem auto 0;
-  background: #ffffff;
-  border: 1px solid #e2dfd5;
-  border-radius: 20px;
-  padding: 4rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+.contact .heading {
+  margin-bottom: 5rem;
 }
-.contact .content {
+.contact #contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+}
+.contact .form-group {
   display: flex;
-  gap: 4rem;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
 }
-.contact .image-box {
-  flex: 1 1 30rem;
-  text-align: center;
-}
-.contact .image-box img {
-  width: 90%;
-  max-width: 280px;
-}
-.contact form {
-  flex: 1 1 40rem;
-}
-.contact .field {
-  position: relative;
-  margin-bottom: 2rem;
-}
-.contact .field input,
-.contact .message textarea {
+.contact .form-group input,
+.contact .form-group textarea {
   width: 100%;
-  padding: 1.5rem 1.5rem 1.5rem 4.5rem;
-  font-size: 1.5rem;
+  padding: 1.2rem 0;
+  font-size: 1.6rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #141414;
-  background: #f6f5f0;
-  border: 1px solid #e2dfd5;
-  border-radius: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c9c6bd;
+  border-radius: 0;
 }
-.contact .message textarea {
-  height: 140px;
+.contact .form-group textarea {
+  min-height: 120px;
   resize: none;
-  padding: 1.5rem 1.5rem 1.5rem 4.5rem;
 }
-.contact .field input:focus,
-.contact .message textarea:focus {
-  border-color: #141414;
-  background: #ffffff;
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+  outline: none;
+  border-bottom-color: #141414;
 }
-.contact .field i,
-.contact .message i {
-  position: absolute;
-  left: 1.8rem;
-  top: 1.8rem;
-  font-size: 1.6rem;
+.contact .form-group input::placeholder,
+.contact .form-group textarea::placeholder {
   color: #88857d;
 }
-.contact .button-area button {
-  width: 100%;
-  padding: 1.6rem;
+.contact .form-group button {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 1.4rem 3.5rem;
   border-radius: 50px;
   background: #141414;
   color: #ffffff;
@@ -790,57 +769,27 @@ header .navbar ul li a:hover::after {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
 }
-.contact .button-area button:hover {
+.contact .form-group button:hover {
   background: #d92550;
 }
 
 /* ===================================
-   FOOTER (MINIMAL DARK EDITORIAL)
+   FOOTER (MINIMAL)
    =================================== */
 .footer {
   background: #121212;
   color: #a09e97;
-  padding: 6rem 8% 3rem;
+  padding: 4rem 8%;
   border-top: 1px solid #222222;
-}
-.footer .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 4rem;
-  margin-bottom: 4rem;
-}
-.footer .box h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 2.6rem;
-  color: #ffffff;
-  font-weight: 600;
-  margin-bottom: 1.8rem;
-}
-.footer .box p {
-  font-size: 1.4rem;
-  line-height: 1.7;
-  text-transform: none;
-}
-.footer .box a {
-  display: block;
-  font-size: 1.4rem;
-  color: #a09e97;
-  margin-bottom: 1rem;
-  text-transform: capitalize;
-}
-.footer .box a:hover {
-  color: #ffffff;
-  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 .footer .share {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 1.5rem;
 }
 .footer .share a {
   width: 40px;
@@ -853,28 +802,16 @@ header .navbar ul li a:hover::after {
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
-  margin-bottom: 0;
 }
 .footer .share a:hover {
   background: #d92550;
   border-color: #d92550;
-  padding-left: 0;
 }
 .footer .credit {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1.4rem;
-  text-align: center;
-  padding-top: 3rem;
-  border-top: 1px solid #222222;
   color: #777570;
   font-weight: 400;
-}
-.footer .credit a {
-  color: #ffffff;
-  font-weight: 600;
-}
-.footer .credit i {
-  color: #d92550;
 }
 
 /* SCROLL TOP BUTTON */
