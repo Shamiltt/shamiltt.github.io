@@ -93,13 +93,14 @@ function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
     let skillHTML = "";
     skills.forEach(skill => {
-        skillHTML += `
-        <div class="bar">
+        const info = `
               <div class="info">
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
-              </div>
-            </div>`
+              </div>`;
+        skillHTML += skill.link
+            ? `<a class="bar" href="${skill.link}" target="_blank" title="${skill.name}">${info}</a>`
+            : `<div class="bar">${info}</div>`
     });
     skillsContainer.innerHTML = skillHTML;
 }

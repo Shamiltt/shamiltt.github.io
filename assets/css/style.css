@@ -452,6 +452,13 @@ header .navbar ul li a:hover::after {
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
 }
+.skills .container a.bar {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
 .skills .container .bar:hover {
   transform: translateY(-6px);
   border-color: #141414;
