@@ -201,13 +201,64 @@ header .navbar ul li a:hover::after {
   padding-top: 11rem;
 }
 
-.home #particles-js {
+.home .blobs {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  opacity: 0.5;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.home .blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.45;
+  animation: float-blob 18s ease-in-out infinite alternate;
+}
+.home .blob-1 {
+  width: 420px;
+  height: 420px;
+  top: -8%;
+  left: -6%;
+  background: radial-gradient(circle at 30% 30%, #e8b7c4, #d08ba0);
+}
+.home .blob-2 {
+  width: 380px;
+  height: 380px;
+  bottom: -10%;
+  right: -5%;
+  background: radial-gradient(circle at 70% 70%, #c9d7f5, #a9c1e8);
+  animation-delay: -6s;
+}
+.home .blob-3 {
+  width: 300px;
+  height: 300px;
+  top: 28%;
+  right: 18%;
+  background: radial-gradient(circle at 50% 50%, #f5e0c9, #ecc9a9);
+  animation-delay: -12s;
+}
+.home .blob-4 {
+  width: 260px;
+  height: 260px;
+  bottom: 12%;
+  left: 24%;
+  background: radial-gradient(circle at 50% 50%, #d6c7e8, #b8a6d8);
+  animation-delay: -3s;
+}
+@keyframes float-blob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(40px, -30px) scale(1.08);
+  }
+  100% {
+    transform: translate(-30px, 25px) scale(0.95);
+  }
 }
 
 .home .content {
