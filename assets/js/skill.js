@@ -1,5 +1,19 @@
 /* skill detail page renderer */
 
+/* WATER TOUCH RIPPLE */
+$(document).on("pointerdown", ".ripple-zone", function (e) {
+    const rect = this.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height) * 2;
+    const ripple = $('<span class="ripple"></span>').css({
+        width: size + "px",
+        height: size + "px",
+        left: (e.clientX - rect.left - size / 2) + "px",
+        top: (e.clientY - rect.top - size / 2) + "px"
+    });
+    $(this).append(ripple);
+    setTimeout(() => ripple.remove(), 850);
+});
+
 const processSteps = [
   { title: "Empathize", icon: "fa-heart", desc: "Understand the user's needs, habits and context so every design decision is grounded in real insight." },
   { title: "Define", icon: "fa-bullseye", desc: "Frame the core problem and shape a clear design brief from everything learned in research." },
@@ -33,7 +47,7 @@ async function loadSkill() {
 
     const workHTML = detail.work && detail.work.length
         ? detail.work.map(w => `
-            <div class="work-item">
+            <div class="work-item ripple-zone">
               ${w.image ? `<img src="${w.image}" alt="${w.title}"/>` : ""}
               <h3>${w.title}</h3>
               <p>${w.desc}</p>
@@ -61,7 +75,7 @@ async function loadSkill() {
             <p class="qoute">A human-centred way to turn problems into thoughtful products.</p>
             <div class="process-grid">
                 ${processSteps.map((step, i) => `
-                    <div class="process-card">
+                    <div class="process-card ripple-zone">
                         <span class="step-no">${String(i + 1).padStart(2, "0")}</span>
                         <i class="fas ${step.icon}"></i>
                         <h3>${step.title}</h3>

@@ -98,10 +98,24 @@ function showSkills(skills) {
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
               </div>`;
-        skillHTML += `<a class="bar" href="skill.html?name=${encodeURIComponent(skill.name)}" title="${skill.name}">${info}</a>`
+        skillHTML += `<a class="bar ripple-zone" href="skill.html?name=${encodeURIComponent(skill.name)}" title="${skill.name}">${info}</a>`
     });
     skillsContainer.innerHTML = skillHTML;
 }
+
+/* WATER TOUCH RIPPLE */
+$(document).on("pointerdown", ".ripple-zone", function (e) {
+    const rect = this.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height) * 2;
+    const ripple = $('<span class="ripple"></span>').css({
+        width: size + "px",
+        height: size + "px",
+        left: (e.clientX - rect.left - size / 2) + "px",
+        top: (e.clientY - rect.top - size / 2) + "px"
+    });
+    $(this).append(ripple);
+    setTimeout(() => ripple.remove(), 850);
+});
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
