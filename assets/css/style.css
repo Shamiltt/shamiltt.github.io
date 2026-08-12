@@ -1842,3 +1842,54 @@ header .navbar ul li a:hover {
 .skills .container .bar .info img {
   filter: drop-shadow(0 0 6px rgba(47, 123, 232, 0.3));
 }
+
+/* ===================================
+   ROBUST CUSTOM CURSOR
+   =================================== */
+@media (hover: hover) and (pointer: fine) {
+  body.custom-cursor-on,
+  body.custom-cursor-on a,
+  body.custom-cursor-on button,
+  body.custom-cursor-on input,
+  body.custom-cursor-on textarea {
+    cursor: none !important;
+  }
+  #cursor-dot,
+  #cursor-ring {
+    display: block !important;
+  }
+}
+#cursor-dot {
+  display: none;
+  position: fixed;
+  left: -100px;
+  top: -100px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1b5fca;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 8px rgba(27, 95, 202, 0.5);
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+}
+#cursor-ring {
+  display: none;
+  position: fixed;
+  left: -100px;
+  top: -100px;
+  width: 38px;
+  height: 38px;
+  border: 2px solid rgba(27, 95, 202, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+#cursor-ring.is-active {
+  width: 56px;
+  height: 56px;
+  border-color: #2f7be8;
+  background: rgba(27, 95, 202, 0.1);
+}

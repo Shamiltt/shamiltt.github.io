@@ -1,44 +1,39 @@
 (function () {
-    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-        return;
-    }
-
     var dot = document.createElement("div");
-    dot.className = "cursor-dot";
+    dot.id = "cursor-dot";
     var ring = document.createElement("div");
-    ring.className = "cursor-ring";
+    ring.id = "cursor-ring";
     document.body.appendChild(dot);
     document.body.appendChild(ring);
     document.body.classList.add("custom-cursor-on");
 
-    var mouseX = -100, mouseY = -100, ringX = -100, ringY = -100;
+    var mx = -100, my = -100, rx = -100, ry = -100;
 
-    document.addEventListener("mousemove", function (e) {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        dot.style.left = mouseX + "px";
-        dot.style.top = mouseY + "px";
-    });
+    window.addEventListener("mousemove", function (e) {
+        mx = e.clientX;
+        my = e.clientY;
+        dot.style.left = mx + "px";
+        dot.style.top = my + "px";
+    }, { passive: true });
+
+    (function loop() {
+        rx += (mx - rx) * 0.18;
+        ry += (my - ry) * 0.18;
+        ring.style.left = rx + "px";
+        ring.style.top = ry + "px";
+        requestAnimationFrame(loop);
+    })();
 
     var interactive = "a, button, input, textarea, .bar, .box, .process-card, .work-item";
 
     document.addEventListener("mouseover", function (e) {
-        if (e.target.closest(interactive)) {
+        if (e.target && e.target.closest && e.target.closest(interactive)) {
             ring.classList.add("is-active");
         }
     });
     document.addEventListener("mouseout", function (e) {
-        if (e.target.closest(interactive)) {
+        if (e.target && e.target.closest && e.target.closest(interactive)) {
             ring.classList.remove("is-active");
         }
     });
-
-    function loop() {
-        ringX += (mouseX - ringX) * 0.18;
-        ringY += (mouseY - ringY) * 0.18;
-        ring.style.left = ringX + "px";
-        ring.style.top = ringY + "px";
-        requestAnimationFrame(loop);
-    }
-    loop();
 })();
