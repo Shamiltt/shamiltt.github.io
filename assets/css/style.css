@@ -1292,3 +1292,272 @@ section.position-relative > *:not(.blobs):not(.deco) {
   background: #d92550;
   transform: translateY(-3px);
 }
+
+/* ===================================
+   GALAXY THEME
+   =================================== */
+body {
+  background:
+    radial-gradient(1100px 750px at 12% 8%, rgba(64, 32, 138, 0.55), transparent 60%),
+    radial-gradient(950px 700px at 88% 18%, rgba(31, 88, 160, 0.5), transparent 60%),
+    radial-gradient(850px 750px at 65% 95%, rgba(120, 40, 150, 0.5), transparent 60%),
+    radial-gradient(700px 600px at 30% 60%, rgba(20, 90, 120, 0.35), transparent 65%),
+    #05030f;
+  background-attachment: fixed;
+  color: #e9e5ff;
+}
+*::selection {
+  background: #a96cff;
+  color: #0a0620;
+}
+html::-webkit-scrollbar-track {
+  background: #070420;
+}
+html::-webkit-scrollbar-thumb {
+  background: #3a2a70;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #a96cff;
+}
+
+/* starfield layer */
+#stars {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+#stars .star {
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: twinkle ease-in-out infinite;
+}
+#stars .star-glow {
+  border-radius: 50%;
+  filter: blur(1px);
+  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.55);
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 1; }
+}
+
+/* navbar */
+header {
+  background-color: rgba(10, 6, 32, 0.72);
+  border-bottom: 1px solid rgba(169, 108, 255, 0.18);
+}
+header .logo,
+header .navbar ul li a {
+  color: #e9e5ff;
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #a96cff;
+}
+
+/* sections transparent so galaxy shows through */
+.home,
+.about,
+.skills,
+.education,
+.work,
+.experience,
+.contact,
+.skill-detail {
+  background: transparent;
+}
+
+/* headings & text */
+.heading,
+.home .content h2,
+.about .content h3,
+.about .content h3 span,
+.about .content .tag,
+.skills .container .bar .info span,
+.education .box-container .box .content h3,
+.education .box-container .box .content h4,
+.work .box .content h3,
+.timeline .content h2,
+.timeline .content h3,
+.skill-head .heading,
+.process-card h3,
+.work-item h3,
+.skill-about h3,
+.contact .heading span {
+  color: #f0edff;
+}
+.home .content h2 span {
+  color: #c99bff;
+}
+.home .content p,
+.about .content p,
+.education .box-container .box .content p,
+.work .box .content p,
+.timeline .content p,
+.skill-about p,
+.work-item p,
+.process-card p,
+.skill-head .tagline {
+  color: #b6aedc;
+}
+.home .content p span {
+  color: #f0edff;
+  border-bottom-color: #a96cff;
+}
+.home .eyebrow {
+  color: #b6aedc;
+  border-bottom-color: rgba(169, 108, 255, 0.4);
+}
+.education .qoute,
+.process .qoute {
+  color: #b6aedc;
+}
+
+/* cards dark glass */
+.skills .container .bar,
+.education .box-container .box,
+.work .box,
+.timeline .content,
+.process-card,
+.work-item,
+.skill-about,
+.coming-soon {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.skills .container .bar:hover,
+.education .box-container .box:hover,
+.work .box:hover,
+.timeline .content:hover,
+.process-card:hover,
+.work-item:hover {
+  border-color: rgba(169, 108, 255, 0.65);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+.education .box-container .box .content h4 {
+  color: #ff8fb3;
+}
+
+/* section dividers */
+.education,
+.work,
+.experience {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.timeline::after {
+  background-color: rgba(169, 108, 255, 0.4);
+}
+.timeline .container::after {
+  background-color: #0a0620;
+  border-color: #a96cff;
+}
+
+/* buttons */
+.home .btn,
+.contact .form-group button,
+.skill-about .btn {
+  background: #f0edff;
+  color: #140b38;
+  box-shadow: 0 8px 22px rgba(169, 108, 255, 0.25);
+}
+.home .btn:hover,
+.contact .form-group button:hover,
+.skill-about .btn:hover {
+  background: #a96cff;
+  color: #0a0620;
+}
+.viewall .btn,
+.morebtn .btn,
+.backbtn .btn {
+  background: rgba(255, 255, 255, 0.06);
+  color: #f0edff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+.viewall .btn:hover,
+.morebtn .btn:hover,
+.backbtn .btn:hover {
+  background: #f0edff;
+  color: #140b38;
+  border-color: #f0edff;
+}
+
+/* contact form */
+.contact .form-group input,
+.contact .form-group textarea {
+  color: #f0edff;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+.contact .form-group input::placeholder,
+.contact .form-group textarea::placeholder {
+  color: #7d76a8;
+}
+.contact .form-group input:focus,
+.contact .form-group textarea:focus {
+  border-bottom-color: #a96cff;
+}
+
+/* nebula blobs */
+.blob-1 { background: radial-gradient(circle at 30% 30%, #7b2ff7, #4a1155); }
+.blob-2 { background: radial-gradient(circle at 70% 70%, #1f88d0, #0f3b63); }
+.blob-3 { background: radial-gradient(circle at 50% 50%, #c046d0, #4a1155); }
+.blob-4 { background: radial-gradient(circle at 50% 50%, #b04fcf, #3b0a4a); }
+.blob-5 { background: radial-gradient(circle at 60% 40%, #3ad2c8, #0f5c66); }
+.blob-6 { background: radial-gradient(circle at 50% 50%, #2f6fe0, #122a5c); }
+.blob-7 { background: radial-gradient(circle at 50% 50%, #e05fb0, #5c1260); }
+.blob-8 { background: radial-gradient(circle at 50% 50%, #7f5fe0, #1d125c); }
+.blob {
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+/* decor elements */
+.deco-dots { background-image: radial-gradient(circle, #a96cff 1.5px, transparent 1.6px); }
+.deco-dots-dark { background-image: radial-gradient(circle, #6f66a8 1.5px, transparent 1.6px); }
+.deco-diamond { background: #a96cff; }
+.deco-square { background: #e05fb0; }
+.deco-line { background: #a96cff; }
+.deco-cross::before,
+.deco-cross::after { background: #6fb0ff; }
+.deco-circle { border-color: #a96cff; }
+
+/* footer deep space */
+.footer {
+  background: #070420;
+  border-top-color: rgba(169, 108, 255, 0.2);
+}
+.footer .share a {
+  background: #160c3d;
+  border-color: rgba(169, 108, 255, 0.35);
+}
+.footer .share a:hover {
+  background: #a96cff;
+  border-color: #a96cff;
+}
+
+/* scroll top */
+#scroll-top {
+  background: #a96cff;
+  color: #0a0620;
+  box-shadow: 0 8px 20px rgba(169, 108, 255, 0.35);
+}
+#scroll-top:hover {
+  background: #e05fb0;
+}
+
+/* cursor */
+.cursor-dot { background: #a96cff; }
+.cursor-ring { border-color: rgba(169, 108, 255, 0.55); }
+.cursor-ring.is-active { border-color: #e05fb0; background: rgba(169, 108, 255, 0.12); }
+
+/* skill icon tiles */
+.skill-head img {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+.skills .container .bar .info img {
+  filter: drop-shadow(0 0 6px rgba(169, 108, 255, 0.35));
+}
