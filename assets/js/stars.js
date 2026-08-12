@@ -1,19 +1,22 @@
 (function () {
     var layer = document.createElement("div");
-    layer.id = "stars";
+    layer.id = "clouds";
     document.body.appendChild(layer);
 
-    var count = 140;
+    var count = 6;
+    var colors = ["#ffffff", "#e8f4ff", "#dceeff"];
     for (var i = 0; i < count; i++) {
-        var star = document.createElement("div");
-        var size = Math.random() < 0.85 ? (Math.random() * 1.6 + 0.6) : (Math.random() * 2.5 + 2);
-        star.className = "star" + (size > 2.4 ? " star-glow" : "");
-        star.style.width = size + "px";
-        star.style.height = size + "px";
-        star.style.left = (Math.random() * 100) + "%";
-        star.style.top = (Math.random() * 100) + "%";
-        star.style.animationDuration = (Math.random() * 3 + 2) + "s";
-        star.style.animationDelay = (Math.random() * 5) + "s";
-        layer.appendChild(star);
+        var cloud = document.createElement("div");
+        var w = Math.random() * 220 + 160;
+        cloud.className = "cloud";
+        cloud.style.width = w + "px";
+        cloud.style.height = (w * 0.55) + "px";
+        cloud.style.left = (Math.random() * 100) + "%";
+        cloud.style.top = (Math.random() * 90) + "%";
+        cloud.style.background = colors[i % colors.length];
+        cloud.style.opacity = (Math.random() * 0.25 + 0.5);
+        cloud.style.animationDuration = (Math.random() * 12 + 10) + "s";
+        cloud.style.animationDelay = (Math.random() * 8) + "s";
+        layer.appendChild(cloud);
     }
 })();
