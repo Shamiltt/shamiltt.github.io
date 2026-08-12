@@ -5,8 +5,7 @@
     },
     {
         "name": "Rhinoceros (Rhino 3D)",
-        "icon": "/assets/images/skills/rhinoceros.png",
-        "link": "/assets/docs/rhino-3d-cad.pdf"
+        "icon": "/assets/images/skills/rhinoceros.png"
     },
     {
         "name": "Adobe Illustrator",

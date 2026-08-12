@@ -1004,6 +1004,195 @@ section.position-relative > *:not(.blobs):not(.deco) {
   font-weight: 400;
 }
 
+/* ===================================
+   SKILL DETAIL PAGE
+   =================================== */
+.skill-detail {
+  background: #f6f5f0;
+}
+.skill-detail #skillContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.skill-head {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.skill-head img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid #e2dfd5;
+  border-radius: 20px;
+  padding: 1.4rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+.skill-head .heading {
+  text-align: left;
+  margin: 0.4rem 0 0;
+}
+.skill-head .tagline {
+  font-size: 1.6rem;
+  color: #5e5c56;
+  text-transform: none;
+}
+.skill-about {
+  margin-top: 4rem;
+  background: #ffffff;
+  border: 1px solid #e2dfd5;
+  border-radius: 18px;
+  padding: 3rem;
+}
+.skill-about h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.6rem;
+  color: #141414;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.skill-about p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #5e5c56;
+  text-transform: none;
+  max-width: 70ch;
+}
+.skill-about .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.3rem 2.6rem;
+  border-radius: 50px;
+  background: #141414;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+.skill-about .btn:hover {
+  background: #d92550;
+}
+
+/* design thinking process */
+.process {
+  margin-top: 6rem;
+}
+.process .heading {
+  margin-bottom: 1rem;
+}
+.process .qoute {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  color: #66645f;
+  margin-bottom: 4rem;
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+.process-card {
+  background: #ffffff;
+  border: 1px solid #e2dfd5;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.process-card:hover {
+  transform: translateY(-6px);
+  border-color: #141414;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+.process-card .step-no {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c9c6bd;
+  letter-spacing: 0.1rem;
+}
+.process-card i {
+  font-size: 2.6rem;
+  color: #d92550;
+  margin-bottom: 1.4rem;
+}
+.process-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  color: #141414;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.process-card p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #5e5c56;
+  text-transform: none;
+}
+
+/* work samples */
+.skill-work {
+  margin-top: 6rem;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+.work-item {
+  background: #ffffff;
+  border: 1px solid #e2dfd5;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 2.5rem;
+}
+.work-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+.work-item h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.2rem;
+  color: #141414;
+  font-weight: 600;
+}
+.work-item p {
+  font-size: 1.4rem;
+  color: #5e5c56;
+  margin-top: 0.8rem;
+  line-height: 1.6;
+  text-transform: none;
+}
+.coming-soon {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #88857d;
+  padding: 4rem;
+  background: #ffffff;
+  border: 1px dashed #e2dfd5;
+  border-radius: 16px;
+}
+.skill-detail .morebtn {
+  margin-top: 5rem;
+}
+
 /* SCROLL TOP BUTTON */
 #scroll-top {
   position: fixed;

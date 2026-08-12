@@ -1,0 +1,90 @@
+[
+    {
+        "name": "ShoeMaster",
+        "icon": "/assets/images/skills/slippers.png",
+        "tagline": "Specialised footwear CAD for patterns and lasts",
+        "about": "ShoeMaster is a dedicated footwear CAD platform. I use it to draft precise 2D patterns, grade sizes and work with standard last data, bridging the gap between design sketches and production-ready patterns.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Rhinoceros (Rhino 3D)",
+        "icon": "/assets/images/skills/rhinoceros.png",
+        "tagline": "Freeform 3D modelling for footwear design",
+        "about": "I model freeform 3D surfaces and footwear silhouettes in Rhino, exploring form, proportion and volume before any physical prototype is made.",
+        "pdf": "/assets/docs/rhino-3d-cad.pdf",
+        "work": []
+    },
+    {
+        "name": "Adobe Illustrator",
+        "icon": "/assets/images/skills/adobe-illustrator.png",
+        "tagline": "Clean technical flats and vector design",
+        "about": "Illustrator is my go-to for vector-based technical drawings, flat sketches, colourways and presentation boards that stay crisp at any scale.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Adobe Photoshop",
+        "icon": "/assets/images/skills/adobe-photoshop.png",
+        "tagline": "Rendering, textures and image editing",
+        "about": "I use Photoshop to render materials and textures over sketches, clean up scans and build moodboards and marketing visuals for projects.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Canva",
+        "icon": "/assets/images/skills/canva.png",
+        "tagline": "Fast presentation and social media design",
+        "about": "Canva helps me turn project work into clean presentations, portfolio pages and social media graphics quickly and consistently.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Sketching & Rendering",
+        "icon": "/assets/images/skills/design.png",
+        "tagline": "Hand sketching that starts every idea",
+        "about": "Every design begins on paper. I sketch silhouettes and details by hand and render them to communicate form, material and mood early in the process.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Concept Development",
+        "icon": "/assets/images/skills/idea.png",
+        "tagline": "From brief and moodboards to strong concepts",
+        "about": "I develop concepts by researching trends, building moodboards and defining a clear design story before translating it into a product direction.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Prototyping",
+        "icon": "/assets/images/skills/blueprint.png",
+        "tagline": "Turning concepts into testable samples",
+        "about": "I build physical and digital prototypes to test fit, comfort and construction, refining the design through hands-on iterations.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Pattern Making",
+        "icon": "/assets/images/skills/scissors.png",
+        "tagline": "Technical patterns that make a design real",
+        "about": "I create and manipulate patterns that transform a 3D design into the flat pieces needed for cutting and assembly in production.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "3D Printing",
+        "icon": "/assets/images/skills/3d-printer.png",
+        "tagline": "Fast physical models from digital files",
+        "about": "I use 3D printing to produce quick physical models of components and forms, validating proportion and detailing early in development.",
+        "pdf": null,
+        "work": []
+    },
+    {
+        "name": "Material Knowledge",
+        "icon": "/assets/images/skills/leather.png",
+        "tagline": "Selecting the right materials for the job",
+        "about": "I understand how leathers, synthetics, foams and soling materials behave, so each design balances durability, comfort and aesthetic.",
+        "pdf": null,
+        "work": []
+    }
+]

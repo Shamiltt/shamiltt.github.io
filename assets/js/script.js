@@ -98,9 +98,7 @@ function showSkills(skills) {
                 <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
               </div>`;
-        skillHTML += skill.link
-            ? `<a class="bar" href="${skill.link}" target="_blank" title="${skill.name}">${info}</a>`
-            : `<div class="bar">${info}</div>`
+        skillHTML += `<a class="bar" href="skill.html?name=${encodeURIComponent(skill.name)}" title="${skill.name}">${info}</a>`
     });
     skillsContainer.innerHTML = skillHTML;
 }
