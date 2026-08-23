@@ -100,3 +100,39 @@ async function loadSkill() {
 }
 
 loadSkill();
+
+/* LIGHTBOX LOGIC */
+document.addEventListener('DOMContentLoaded', () => {
+    const lightboxHTML = `<div class="lightbox-modal" id="lightbox-modal">
+        <span class="close-btn" id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>`;
+    document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+
+    const modal = document.getElementById('lightbox-modal');
+    const modalImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('lightbox-close');
+
+    function openLightbox(src) {
+        modalImg.src = src;
+        modal.classList.add('active');
+    }
+    
+    function closeLightbox() {
+        modal.classList.remove('active');
+        setTimeout(() => modalImg.src = '', 300);
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    modal.addEventListener('click', (e) => {
+        if(e.target === modal) closeLightbox();
+    });
+
+    // Delegate click events for dynamic images
+    document.body.addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG' && (e.target.closest('.box') || e.target.closest('.work-item') || e.target.closest('.project-item') || e.target.closest('.skill-work'))) {
+            // Add cursor pointer style
+            openLightbox(e.target.src);
+        }
+    });
+});
