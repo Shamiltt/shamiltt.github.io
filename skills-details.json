@@ -13,7 +13,13 @@
         "tagline": "Freeform 3D modelling for footwear design",
         "about": "I model freeform 3D surfaces and footwear silhouettes in Rhino, exploring form, proportion and volume before any physical prototype is made.",
         "pdf": "/assets/docs/rhino-3d-cad.pdf",
-        "work": []
+        "work": [
+            {
+                "title": "Recreated Temple Paduka",
+                "desc": "Paduka chappal recreated for the programm soles below the tale. This is a recreated paduka from a temple sculpture.",
+                "image": "/assets/images/work/paduka.png"
+            }
+        ]
     },
     {
         "name": "Adobe Illustrator",
