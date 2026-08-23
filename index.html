@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/override.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
@@ -48,33 +47,74 @@
 
 <!-- hero section starts -->
 <section class="home" id="home">
+    <div class="blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="blob blob-4"></div>
+      <div class="blob blob-5"></div>
+      <div class="blob blob-6"></div>
+      <div class="blob blob-7"></div>
+      <div class="blob blob-8"></div>
+    </div>
+
     <div class="content">
-    <h2>Digital design<br/> <span>PORTFOLIO</span><br/><span style="font-size: 2rem; color: #a0a0a0; letter-spacing: 2px;">2026 - SHAMIL TT</span></h2>
+    <span class="eyebrow">Footwear Design &amp; Production</span>
+    <h2>Muhammed<br/> <span>Shamil T T</span></h2>
+    <p>focused on <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/muhammed-shamil-t-t-718a5631b" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/sham.il9344" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="twitter" aria-label="Email" href="mailto:muhammedshamiltt843@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="image">
-        <!-- We use the car placeholder or original hero image -->
-        <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
-    </div>
+<div class="image">
+    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+</div>
 </section>
 <!-- hero section ends -->
 
 
 <!-- about section starts -->
-<section class="about" id="about">
-    <h2 class="heading">About <span>Me</span></h2>
+<section class="about position-relative" id="about">
+    <span class="deco deco-dots deco-tr"></span>
+    <span class="deco deco-circle deco-bl"></span>
+    <span class="deco deco-diamond deco-tl"></span>
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
     <div class="row">
-        <div class="about-card">
-            <img src="./assets/images/profile2.jpg" alt="Shamil">
-            <div class="content-text">
-                <p style="color: #fff; font-weight: bold; margin-bottom: 5px;">Hello !</p>
-                <p>I'm Shamil, B.Des Student in Footwear Design and Production at FDDI Hyderabad.</p>
-                <p>Motivated, curious and passionate about design for many years. I wholeheartedly wish to become a creative footwear designer and 3D modeler.</p>
-                <div class="contact-info">
-                    <p>muhammedshamiltt843@gmail.com</p>
-                    <p>Calicut, Kerala</p>
-                </div>
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Shamil</h3>
+        <span class="tag">Footwear Design Student</span>
+        
+        <p>Creative and detail-oriented footwear design student with a strong foundation in both traditional craftsmanship and modern digital tools. Currently developing skills in ergonomics, design innovation, and material exploration, with a focus on combining functionality with aesthetic appeal. Passionate about product development and 3D prototyping, with a goal to contribute effectively to the footwear industry.</p>
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+            </div> -->
+            <div class="box">
+              <p><span> email : </span> muhammedshamiltt843@gmail.com</p>
+              <p><span> place : </span> Calicut, Kerala</p>
             </div>
         </div>
+        
+        <div class="resumebtn">
+            <a href="#contact" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
     </div>
 </section>
 <!-- about section ends -->
@@ -131,16 +171,39 @@
 
 
 <!-- work project section starts -->
-<section class="work" id="work">
-  <h2 class="heading">Projects</h2>
-  <div class="projects-list" id="projects-list-container">
-      <!-- Injected by script.js -->
-  </div>
-  <div class="viewall">
-    <a href="/projects" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
+<section class="work position-relative" id="work">
+
+  <span class="deco deco-dots-dark deco-bl"></span>
+  <span class="deco deco-diamond deco-tr"></span>
+  <span class="deco deco-square deco-tl"></span>
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+  <div class="box-container">
+
+    <!-- <div class="box tilt">
+      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
+      <div class="content">
+        <div class="tag">
+        <h3>Portfolio Website</h3>
+        </div>
+        <div class="desc">
+          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
+          <div class="btns">
+            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+</div>
+
+<div class="viewall">
+  <a href="/projects" class="btn"><span>View All</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
 </section>
 <!-- work project section ends -->
 

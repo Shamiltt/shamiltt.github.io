@@ -118,19 +118,25 @@ $(document).on("pointerdown", ".ripple-zone", function (e) {
 });
 
 function showProjects(projects) {
-    let projectsContainer = document.getElementById("projects-list-container");
-    if (!projectsContainer) return;
+    let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach((project, index) => {
-        let num = String(index + 1).padStart(2, '0') + ".";
+    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
-        <div class="project-item tilt">
-          <div class="num">${num}</div>
-          <div class="bar">
-              <a href="${project.links.view}" target="_blank" style="text-decoration:none;"><h3>${project.name}</h3></a>
-              <img draggable="false" src="./assets/images/projects/${project.image}.png" alt="project" class="proj-img" onerror="this.src='./assets/images/cmsoon.png'"/>
+        <div class="box tilt">
+      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+      <div class="content">
+        <div class="tag">
+        <h3>${project.name}</h3>
+        </div>
+        <div class="desc">
+          <p>${project.desc}</p>
+          <div class="btns">
+            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
-        </div>`
+        </div>
+      </div>
+    </div>`
     });
     projectsContainer.innerHTML = projectHTML;
 
@@ -149,7 +155,7 @@ function showProjects(projects) {
     });
 
     /* SCROLL PROJECTS */
-    srtop.reveal('.work .project-item', { interval: 200 });
+    srtop.reveal('.work .box', { interval: 200 });
 
 }
 
